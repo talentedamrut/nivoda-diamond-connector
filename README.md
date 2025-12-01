@@ -3,9 +3,9 @@
 
 ---
 ## Developer Information
-Developer: Amrut Ratanni
-Website: https://amrutratnani.com
-E-mail: collab@amrutratnani.com
+**Developer:** Amrut Ratanni
+**Website:** https://amrutratnani.com
+**E-mail:** collab@amrutratnani.com
 
 ---
 

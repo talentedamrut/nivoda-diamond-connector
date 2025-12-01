@@ -88,13 +88,6 @@ Diamond Search: [nivoda_search]
 
 Single Diamond: [nivoda_diamond id="DIAMOND_ID"]```
 
-📬 Support
 
-For issues or feature requests, please open an Issue in this GitHub repository.
-For custom development or enterprise integration, contact: collab@amrutratnani.com
-
-Donate / Sponsor This Project
-
-```PayPal: https://paypal.me/lembits```
 
 

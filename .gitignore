@@ -57,6 +57,59 @@ No build step required - this is a pure PHP/JS plugin.
 5. Verify search and filtering work correctly
 6. Test add-to-cart functionality
 
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Node & Build
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.bundle/
+
+# Composer
+vendor/
+composer.lock
+
+# Logs
+*.log
+debug.log
+
+# System caches
+.cache/
+*.cache
+
+# Sass / CSS build
+.sass-cache/
+*.map
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# WordPress-specific
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Plugin packaging artifacts
+*.zip
+*.tar.gz
+
+# macOS / Windows junk
+Icon?
+ehthumbs.db
+desktop.ini
+
+
 ## License
 
 GPL v2 or later

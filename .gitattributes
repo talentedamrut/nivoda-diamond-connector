@@ -1,0 +1,36 @@
+# Normalize line endings
+* text=auto eol=lf
+
+# Treat PHP, JS, CSS as text
+*.php text
+*.js text
+*.css text
+*.html text
+*.md text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.pdf binary
+*.zip binary
+
+# Export-ignore: exclude files from "Download ZIP"
+.gitignore export-ignore
+.gitattributes export-ignore
+README.md export-ignore
+CHANGELOG.md export-ignore
+CONTRIBUTING.md export-ignore
+composer.json export-ignore
+composer.lock export-ignore
+package.json export-ignore
+package-lock.json export-ignore
+node_modules/ export-ignore
+assets/src/ export-ignore
+docs/ export-ignore
+tests/ export-ignore
+.vscode/ export-ignore
+.idea/ export-ignore

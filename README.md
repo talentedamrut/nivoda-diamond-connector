@@ -2,10 +2,10 @@
 *A Professional Diamond Inventory, Search & Checkout Solution Powered by Nivoda APIs*
 
 ---
-
-*Developer: Amrut Ratanni*
-*Website: https://amrutratnani.com*
-*E-mail: collab@amrutratnani.com*
+## Developer Information
+Developer: Amrut Ratanni
+Website: https://amrutratnani.com
+E-mail: collab@amrutratnani.com
 
 ---
 

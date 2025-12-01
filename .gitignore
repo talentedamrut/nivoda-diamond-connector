@@ -1,0 +1,62 @@
+# Nivoda Diamond Connector
+
+This plugin integrates the Nivoda diamond API with WordPress and WooCommerce.
+
+## Directory Structure
+
+```
+nivoda-diamond-connector/
+├── nivoda-diamond-connector.php  # Main plugin file
+├── includes/                      # PHP classes
+│   ├── class-ndc-api.php         # API service wrapper
+│   ├── class-ndc-cache.php       # Caching layer
+│   ├── class-ndc-settings.php    # Admin settings
+│   ├── class-ndc-cpt.php         # Custom post type
+│   ├── class-ndc-ajax.php        # AJAX handlers
+│   ├── class-ndc-woocommerce.php # WooCommerce integration
+│   └── class-ndc-admin-tools.php # Admin tools
+├── assets/                        # Frontend assets
+│   ├── css/
+│   │   ├── frontend.css          # Frontend styles
+│   │   └── admin.css             # Admin styles
+│   └── js/
+│       ├── frontend.js           # Frontend JavaScript
+│       └── admin.js              # Admin JavaScript
+├── templates/                     # Template files
+│   ├── search.php                # Search interface
+│   └── single-diamond.php        # Single diamond view
+├── languages/                     # Translation files
+├── README.md                      # Documentation
+└── readme.txt                     # WordPress.org readme
+```
+
+## Development
+
+### Prerequisites
+
+- WordPress development environment
+- WooCommerce installed
+- Nivoda API credentials
+
+### Setup
+
+1. Clone this repository to `wp-content/plugins/`
+2. Activate the plugin in WordPress
+3. Configure API settings
+
+### Building for Production
+
+No build step required - this is a pure PHP/JS plugin.
+
+### Testing
+
+1. Install and activate the plugin
+2. Configure Nivoda API key in settings
+3. Test API connection via admin tools
+4. Add `[nivoda_search]` shortcode to a page
+5. Verify search and filtering work correctly
+6. Test add-to-cart functionality
+
+## License
+
+GPL v2 or later

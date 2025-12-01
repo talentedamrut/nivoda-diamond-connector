@@ -1,0 +1,455 @@
+/**
+ * Nivoda Diamond Connector - Frontend Styles
+ */
+
+/* Search Wrapper */
+.ndc-search-wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+@media (max-width: 968px) {
+    .ndc-search-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Filters */
+.ndc-filters {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.ndc-filters h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.ndc-filter-group {
+    margin-bottom: 25px;
+}
+
+.ndc-filter-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Shape Grid */
+.ndc-shape-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.ndc-shape-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal !important;
+}
+
+.ndc-shape-option input {
+    margin-right: 8px;
+}
+
+/* Checkbox Group */
+.ndc-checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.ndc-checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal !important;
+    cursor: pointer;
+}
+
+.ndc-checkbox-group input {
+    margin-right: 5px;
+}
+
+/* Sliders */
+.ndc-slider {
+    margin: 15px 0;
+}
+
+.ndc-slider-values {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.ndc-slider-values input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Filter Actions */
+.ndc-filter-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ndc-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ndc-btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.ndc-btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.ndc-btn-secondary {
+    background: #6b7280;
+    color: white;
+}
+
+.ndc-btn-secondary:hover {
+    background: #4b5563;
+}
+
+.ndc-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Results */
+.ndc-results {
+    min-height: 400px;
+}
+
+.ndc-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.ndc-results-count {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.ndc-results-count span {
+    color: #2563eb;
+}
+
+.ndc-results-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ndc-results-sort label {
+    font-weight: 600;
+    color: #555;
+}
+
+.ndc-results-sort select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+/* Results Grid */
+.ndc-results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .ndc-results-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Diamond Card */
+.ndc-diamond-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.ndc-diamond-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.ndc-diamond-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-color: #f5f5f5;
+}
+
+.ndc-diamond-image.ndc-no-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 14px;
+}
+
+.ndc-diamond-info {
+    padding: 15px;
+}
+
+.ndc-diamond-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #333;
+    line-height: 1.4;
+}
+
+.ndc-diamond-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #666;
+}
+
+.ndc-diamond-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.ndc-diamond-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.ndc-diamond-actions .ndc-btn {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.ndc-btn-view {
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.ndc-btn-view:hover {
+    background: #eff6ff;
+}
+
+/* Pagination */
+.ndc-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.ndc-pagination-inner {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.ndc-page-link,
+.ndc-page-current {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    min-width: 40px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.ndc-page-link:hover {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.ndc-page-current {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+    font-weight: 600;
+}
+
+/* Loading */
+.ndc-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.ndc-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2563eb;
+    border-radius: 50%;
+    animation: ndc-spin 1s linear infinite;
+    margin-bottom: 15px;
+}
+
+@keyframes ndc-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error Messages */
+.ndc-error {
+    padding: 20px;
+    background: #fee;
+    border: 1px solid #fcc;
+    border-radius: 4px;
+    color: #c33;
+    text-align: center;
+}
+
+.ndc-no-results {
+    padding: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Single Diamond */
+.ndc-single-diamond {
+    margin: 30px 0;
+}
+
+.ndc-diamond-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 968px) {
+    .ndc-diamond-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ndc-diamond-gallery {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ndc-diamond-gallery img,
+.ndc-diamond-gallery video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ndc-certificate {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.ndc-certificate h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.ndc-diamond-details h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.ndc-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.ndc-specs-table th,
+.ndc-specs-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.ndc-specs-table th {
+    font-weight: 600;
+    color: #555;
+    width: 40%;
+}
+
+.ndc-specs-table td {
+    color: #333;
+}
+
+/* Success state */
+.ndc-btn.ndc-success {
+    background: #10b981 !important;
+}
+
+/* Slick carousel customization */
+.slick-prev,
+.slick-next {
+    z-index: 10;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-dots {
+    bottom: 15px;
+}

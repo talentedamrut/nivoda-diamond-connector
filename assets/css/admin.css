@@ -1,0 +1,53 @@
+/**
+ * Nivoda Diamond Connector - Admin Styles
+ */
+
+.ndc-admin-header {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.ndc-admin-header h1 {
+    margin: 0;
+}
+
+/* Settings Page */
+.ndc-settings-section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccd0d4;
+}
+
+.ndc-settings-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Tools Page */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0 0 0;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.card h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Diagnostics */
+#ndc-diagnostics-result {
+    margin: 15px 0;
+}
+
+#ndc-diagnostics-result .notice {
+    margin: 0;
+}

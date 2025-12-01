@@ -6,6 +6,7 @@
 - **Developer:** Amrut Ratanni
 - **Website:** https://amrutratnani.com
 - **E-mail:** collab@amrutratnani.com
+- **Donation:** https://paypal.me/lembits
 
 ---
 
